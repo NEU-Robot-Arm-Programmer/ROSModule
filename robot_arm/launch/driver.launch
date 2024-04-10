@@ -1,0 +1,5 @@
+<launch>
+  <node name="camera" pkg="robot_arm" exec="camera"></node>  
+  <node name="convert_node" pkg="robot_arm" exec="joint_angle_pub"></node>
+  <node name="arduino" pkg="robot_arm" exec="arduino" ></node>
+</launch>            
